@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgb(12, 12, 12);;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+
+#name{
+    margin-left:4%;
+    color: antiquewhite;
+}
+header{
+    font-weight:bold;
+    font-size: 140%;
+    width: 100%;
+    padding-top: 2%;
+    position: relative;
+    display:flex;
+   
+   
+  
+}
+.nav {
+    width: 100%;
+  margin-left: 45%;
+   
+}
+.nav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+}
+#name:hover{
+    scale: 1.5;
+    color: rgb(243, 5, 5);
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+.navc::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(243, 5, 5);
+    position: absolute;
+   left:0;
+    bottom: -10px;
+    transition:1.2s;
+
+}
+.navc:hover::after{
+    width:100%;
+    opacity: 1;
+    scale: 1.5;
+   
+}
+
+.con{
+    align-items: center;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 90vh;
+    margin-top: 1%;
+    align-items: center;
+    background-color:#0c192c;
+    display: flex;
+}
+.tex{
+    margin-left: 8%;
+    overflow:inherit;
+}
+.tex h3{
+    font-weight: bolder;
+    font-size: 220%;
+    color: rgb(245, 245, 220);
+}
+.pic{
+    width: 50%;
+    height: 90vh;
+    background-color: #99e8ee;
+    overflow: hidden;
+    position: relative;
+    background-color:#0c192c;
+  
+}
+.tex h1{
+    font-size: 300%;
+    color: beige;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tex span{
+    color:rgb(204, 73, 7);;
+}
+.tex p{
+    font-size: 200%;
+    color: beige;
+}
+.picbox{
+    position: relative;
+    width: 30%;
+    height: 28%;
+    background-color: beige;
+    margin-top:25%;
+    margin-left: 30%;
+    background-color: rgb(32, 31, 31);
+  border-color: rgb(204, 73, 7);
+    border-style:dashed;
+   
+}
+.picbox img{
+    width: 100%;
+    height: 190%;
+}
+.pic button{
+    margin-left: 25%;
+    margin-top: 3%;
+    font-size: 170%;
+    background-color:rgb(235, 54, 8);
+    color:rgb(0, 0, 0);
+    width:40%;
+    height: 70px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+  
+}
+.tex button:hover{
+    background-color:rgb(255, 85, 0);
+    cursor: pointer;
+    color: beige;
+}
+#about{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+   background-color:#0c192c;
+    align-items: center;
+    
+    display: flex;
+}
+#skill{
+    background-color: #0c192c;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    height: 70vh;
+    justify-content: space-around;
+}
+#skill img{
+    width:10%;
+    height: 10vh;
+}
+.sk{
+
+    background-color:#0c192c;
+    font-size: 90px;
+    color: rgb(255, 0, 0);
+}
+.connection{
+    
+  margin-top: 3%;
+    display:flex;
+  margin-left: 25%;
+  background-color: beige;
+  width: 30%;
+  justify-content: space-between;
+ 
+}
+
+.in{
+    width: 50%;
+}
+.git{
+    width: 50%;
+
+}
+.email{
+    width: 50%;
+}
+#about .picbox{
+    width: 60%;
+    height: 60%;
+}
+#about h2{
+   color: beige;
+}
+.bub{
+    position: relative;
+    display: flex;
+
+}
+.bub span{
+    position: relative;
+    width: 3px;
+    height: 4px;
+    background-color: aqua;
+    margin: 0 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgb(43, 177, 226),
+    0 0 0 2px rgb(4, 96, 122),
+    0 0 0 3px rgb(43, 177, 226);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(40s/var(--i));
+
+}
+.bub span:nth-child(even){
+    box-shadow: 0 0 0 1px rgb(205, 23, 23),
+    0 0 0 2px rgb(104, 1, 1),
+    0 0 0 3px rgb(226, 43, 43);
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-1vh) scale(1);
+    }
+}
+i{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: rgb(255, 0, 183);
+    pointer-events: none;
+    animation: animat 2s linear forwards;
+
+}
+@keyframes animat{
+    0%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--x),var(--y));
+    }
+}
+#about h1{
+    margin-left: 40%;
+    color: #bf0202;
+}
+.sk h3{
+    margin-left: 30%;
+}
+.sk p{
+    font-size: x-large;
+    margin-left: 10%;
+    color: azure;
+
+}
