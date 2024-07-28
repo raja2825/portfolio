@@ -19,6 +19,7 @@ body{
 #emaill{
     color: orangered;
     font-size: 40px;
+   
 }
 #num{
     margin-left: 4%;
@@ -33,6 +34,7 @@ body{
     border-radius: 5px;
 }
 #email{
+    
     margin-left: 4%;
     border-color: orangered;
     border-width: 4px;
@@ -55,4 +57,14 @@ button{
     height: 40px;
     color: aliceblue;
     font-size: large;
+    border-radius: 15px;
+}
+form{
+    position: relative;
+}
+#contact img:hover{
+    scale: 1.5;
+}
+button:hover{
+    scale: 1.5;
 }
