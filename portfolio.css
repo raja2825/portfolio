@@ -184,6 +184,7 @@ header{
 }
 .email{
     width: 50%;
+    outline: none;
 }
 #about .picbox{
     width: 60%;
